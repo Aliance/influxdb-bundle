@@ -21,10 +21,10 @@
         "symfony/framework-bundle": "^2.8 || ^3.0"
     },
     "require-dev": {
-        "matthiasnoback/symfony-dependency-injection-test": "^1.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^2.0",
+        "phpunit/phpunit": "^6.0",
         "sllh/php-cs-fixer-styleci-bridge": "^2.0",
-        "symfony/form": "^2.8 || ^3.0",
-        "symfony/phpunit-bridge": "^3.1"
+        "symfony/form": "^2.8 || ^3.0"
     },
     "suggest": {
         "symfony/form": "Needed for form types usage"
@@ -36,7 +36,8 @@
         "psr-4": { "Algatux\\InfluxDbBundle\\": "src/" }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "bin-dir": "bin"
     },
     "extra": {
         "branch-alias": {

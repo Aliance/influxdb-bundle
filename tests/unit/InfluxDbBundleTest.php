@@ -1,7 +1,5 @@
 <?php
 
-//declare(strict_types=1);
-
 namespace Algatux\InfluxDbBundle\unit;
 
 use Algatux\InfluxDbBundle\DependencyInjection\InfluxDbExtension;
@@ -25,12 +23,8 @@ class InfluxDbBundleTest extends AbstractContainerBuilderTestCase
 
     public function test_build()
     {
-        $this->bundle->build($this->container);
-    }
-
-    public function test_get_container_extension()
-    {
         $this->assertInstanceOf(Bundle::class, $this->bundle);
         $this->assertInstanceOf(InfluxDbExtension::class, $this->bundle->getContainerExtension());
+        $this->bundle->build($this->container);
     }
 }
